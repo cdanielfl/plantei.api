@@ -1,0 +1,30 @@
+{
+  "name": "plantei-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scr/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon scr/server.js",
+    "dev": "nodemon scr/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdanielfl/plantei.api.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/cdanielfl/plantei.api/issues"
+  },
+  "homepage": "https://github.com/cdanielfl/plantei.api#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
