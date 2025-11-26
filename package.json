@@ -5,7 +5,7 @@
   "main": "scr/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon scr/server.js",
+    "start": "node scr/server.js",
     "dev": "nodemon scr/server.js"
   },
   "keywords": [],
