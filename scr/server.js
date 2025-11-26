@@ -1,4 +1,4 @@
-mport express from 'express';
+import express from 'express';
 import { Sequelize } from 'sequelize';
 
 const HOST = '127.0.0.1'
