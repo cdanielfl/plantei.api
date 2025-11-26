@@ -22,16 +22,22 @@ const sequelize = new Sequelize(
                 require: true
             }
         },
-        loggin: true
+        logging: true
     }
 ) // Example for postgres
 
-try {
-    await sequelize.authenticate()
-    console.log('🟢 Conectado ao banco de dados!');
-} catch (error) {
-    console.error('🔴 Erro ao conectar no banco:', error);
+// Função para conectar ao banco
+async function connectDB() {
+    try {
+        await sequelize.authenticate()
+        console.log('🟢 Conectado ao banco de dados!');
+    } catch (error) {
+        console.error('🔴 Erro ao conectar no banco:', error);
+    }
 }
+
+// Conectar ao banco
+connectDB();
 
 //Iniciando o server
 app.listen(PORT, () => {
